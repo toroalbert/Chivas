@@ -1,0 +1,1095 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 200;
+    overflow-x: hidden;
+}
+
+p {
+    font-weight: 400 !important;
+}
+
+.vrd-bar {
+    z-index: 3;
+    background: #93C100;
+    color: #409100;
+    text-align: right;
+    font-weight: 700;
+}
+
+.fa-regular {
+    cursor: pointer;
+    color: #fff !important;
+}
+
+.vrd-bar span {
+    color: #fff !important
+}
+
+.bg-navchiv {
+    background: #313131;
+    z-index: 3;
+}
+
+.btn-chiv {
+    cursor: pointer;
+}
+
+.btn-chiv img {
+    border-radius: 8px;
+}
+
+#principal {
+    background-size: cover;
+    background-position: center top;
+}
+
+.principal-chiv {
+    position: relative;
+    height: calc(100vh - 66px);
+    min-height: calc(100vh - 66px);
+    overflow: hidden;
+}
+
+.logo {
+    width: 30%;
+    position: absolute;
+    top: -10vh;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+
+.corral {
+    z-index: 1000;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.buycorral {
+    position: absolute;
+    width: 100%;
+    bottom: 40%;
+    z-index: 2000;
+}
+
+.bchiv {
+    width: 30%;
+}
+
+.corralfondo {
+    z-index: 2000;
+    position: absolute;
+    bottom: -17%;
+    width: 100%;
+}
+
+a.nav-link {
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+}
+
+.corralimg {
+    width: 100%;
+}
+
+.corral img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1370px) {
+    .corral {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .corral img {
+        width: 50%;
+    }
+    .buycorral img {
+        width: 35%;
+    }
+    .corralfondo {
+        bottom: -18%;
+    }
+    .sliderc-img {
+        max-width: 362px !important;
+    }
+    #pte .chiv-roja {
+        margin-top: -256px !important;
+    }
+    #pte .chiv-der {
+        margin-top: -100px !important;
+    }
+    #roadmap {
+        background-size: contain !important;
+        min-height: 0px !important;
+        padding-top: 6% !important;
+    }
+    #roadmap .siluet {
+        background-image: url('../img/roadmap-laptop.png') !important;
+    }
+    #roadmap ul {
+        font-size: 1em;
+    }
+    .road-row {
+        height: 210px !important;
+        padding-top: 20px !important;
+    }
+    #roadmap img {
+        width: 50%;
+    }
+    .chiv-pastol {
+        margin-top: -155px !important;
+    }
+    .chiv-pastor {
+        margin-top: -153px !important;
+    }
+    .logo-f {
+        width: 60%;
+    }
+}
+
+.redes {
+    position: absolute;
+    margin-left: 5%;
+    padding-left: 3%;
+    top: 0;
+    padding-right: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 144px;
+    max-width: 445px;
+    background: url('../img/redes.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    z-index: 4000;
+}
+
+.correo {
+    position: absolute;
+    top: 150px;
+    left: 5%;
+}
+
+.redes a {
+    font-size: 25px;
+    color: #313131;
+    text-align: center;
+    width: 56px;
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
+    align-self: end;
+    margin-bottom: 10%;
+}
+
+
+/* Safari 7.1+ */
+
+@media not all and (min-resolution:.001dpcm) {
+    .redes a {
+        margin-top: 25%;
+        margin-bottom: 5% !important;
+    }
+    @media screen and (max-width: 1370px) {
+        .redes a {
+            margin-top: 20%;
+        }
+    }
+    #pte .chiv-roja {
+        margin-top: -480px !important;
+    }
+    .chiv-pastol,
+    .chiv-pastor {
+        margin-top: -300px !important;
+    }
+    .partn-iz {
+        margin-top: -390px !important;
+    }
+    .partn-der {
+        margin-top: -380px !important;
+    }
+    @media only screen and (max-width: 769px) {
+        #pte .chiv-roja {
+            margin-top: -171px!important;
+        }
+        #pte .chiv-der {
+            margin-top: -30px!important;
+        }
+        a.nav-link {
+            padding-right: 0.3rem !important;
+            padding-left: 0.3rem !important;
+        }
+    }
+}
+
+#second {
+    /*background-image: url('../img/bg-2da-100.jpg');*/
+    background: url(../img/bg-vid.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #fff;
+    padding: 7% 0px;
+    text-align: center;
+    background-size: cover;
+    background-position: center bottom;
+}
+
+#second h2,
+#equipo h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #F7B000;
+    text-shadow: -1px 5px #ff2f1c3c;
+    text-transform: uppercase;
+}
+
+#second p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 25px;
+    color: #409100;
+}
+
+.corral-img {
+    position: absolute;
+    margin-top: -9%;
+    width: 100%;
+}
+
+.ma-video {
+    margin: 0px auto;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background: url(../img/marco.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.video-chiv {
+    margin: 0 auto;
+    width: 100%;
+}
+
+.video-chiv iframe {
+    height: 500px;
+    width: 900px;
+}
+
+#pte {
+    display: block;
+    position: relative;
+    background-color: #FF301C;
+    background-image: url('../img/bg-pte.png');
+    background-position: center top;
+    background-size: cover;
+    color: #FFFFFF;
+    width: 100%;
+    height: 355px;
+}
+
+#pte .chiv-roja {
+    margin-top: -382px;
+    width: 30%;
+}
+
+#pte .chiv-der {
+    margin-top: -150px;
+    width: 30%;
+}
+
+#pte h2 {
+    color: #FFF100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-shadow: -1px 5px rgba(0, 0, 0, 0.166);
+    font-size: 40px;
+}
+
+#pte p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-size: 25px;
+}
+
+#personajes {
+    background-color: #409100;
+    background-image: url('../img/bg-personajes.png');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 12%;
+    padding-bottom: 7%;
+    text-align: right;
+}
+
+#personajes h2,
+#corrales h2 {
+    color: #FFF100;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-shadow: -1px 5px #ff2f1c3c;
+    font-size: 40px;
+}
+
+hr {
+    width: 70px;
+    opacity: 1;
+}
+
+.chivhr {
+    border-top: 5px solid #FF301C;
+    float: right;
+}
+
+.chiv3hr {
+    border-top: 5px solid #FF301C;
+    float: left;
+}
+
+.chiv4hr {
+    border-top: 5px solid #FF301C;
+    margin: auto;
+}
+
+#personajes p,
+#corrales p {
+    clear: both;
+    color: #fff;
+    font-size: 25px;
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+}
+
+#modos-juego {
+    background-color: #29ABE2;
+    background-image: url('../img/bg-modos.png');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: center;
+}
+
+#modos-juego h2 {
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-shadow: -1px 5px #ff2f1c3c;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+#modos-juego h3 {
+    color: #002226;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+#modos-juego p {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 20px;
+    color: #fff;
+}
+
+.chiv2hr {
+    border-top: 5px solid #000;
+    margin: auto;
+}
+
+#modos-juego img {
+    width: 300px;
+}
+
+#corrales {
+    background-color: #409100;
+    background-image: url('../img/bg-corrales.png');
+    background-position: center top;
+    background-size: cover;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+.container-slider {
+    width: 90%;
+    max-width: 380px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-section {
+    width: 100%;
+}
+
+.slider {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    width: 500%;
+    margin-left: -100%;
+}
+
+.slider-img {
+    display: block;
+    margin: auto;
+    height: 100%;
+    max-width: 350px;
+}
+
+.slider-btn {
+    position: absolute;
+    font-size: 40px;
+    cursor: pointer;
+    color: #FFF100;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.slider-btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.slider-btn-right {
+    right: 5px;
+}
+
+.slider-btn-left {
+    left: 5px;
+}
+
+.container-sliderc {
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.sliderc-section {
+    width: 100%;
+}
+
+.sliderc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 400px;
+    width: 400%;
+    margin-left: -100%;
+}
+
+.sliderc-img {
+    display: block;
+    margin: auto;
+    max-width: 450px;
+}
+
+#equipo {
+    background: #fff;
+    background-image: url('../img/bg-equipo.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 7%;
+    min-height: 900px;
+}
+
+#equipo .img-l {
+    position: absolute;
+    top: -150px;
+    left: -15px;
+}
+
+#equipo .img-r {
+    position: absolute;
+    top: -150px;
+    right: -28px
+}
+
+.py-7 {
+    padding-top: 6rem!important;
+    padding-bottom: 6rem!important;
+}
+
+.img-l img,
+.img-r img {
+    width: 95%;
+}
+
+.chiv-pastol {
+    margin-top: -240px;
+    width: 30%;
+}
+
+.chiv-pastor {
+    margin-top: -240px;
+    width: 30%;
+}
+
+.person {
+    /* background: url('../img/bg-prsn.png'); */
+    min-height: 524px;
+    padding-top: 9px;
+    color: #fff;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+}
+
+.bgazul {
+    margin: 0 12%;
+    background: #001c21;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.bgazul2 {
+    margin: 0 12%;
+    padding: 3% 2px 10% 2px;
+    background: #001c21;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.person img {
+    margin-bottom: 20px;
+}
+
+.person h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.person .t-am {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #F7B000;
+}
+
+.person .ttl {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #FF301C;
+}
+
+.person .desc-person {
+    font-size: 11px;
+    font-weight: 100;
+}
+
+.person .social {
+    margin-top: 15px;
+}
+
+.person .social a {
+    margin: 0 5px;
+}
+
+.person .social i {
+    color: #fff;
+}
+
+#partners {
+    position: relative;
+    background: #FF301C;
+    background-image: url('../img/bg-partners.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    max-height: 400px;
+}
+
+.partn-iz {
+    margin-top: -300px;
+    width: 20%;
+}
+
+.partn-der {
+    margin-top: -290px;
+    width: 20%;
+}
+
+.partn-h {
+    height: 300px;
+    justify-content: center;
+}
+
+#roadmap {
+    background-color: #409100;
+    background-image: url('../img/bg-road.png');
+    background-size: cover;
+    min-height: 2057px;
+    padding: 8% 0px;
+}
+
+#roadmap .siluet {
+    background-image: url('../img/roadmap.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#roadmap h2,
+#precio h2,
+footer h3 {
+    font-family: "Open Sans";
+    font-weight: 800;
+    font-size: 40px;
+    color: rgb(247, 176, 0);
+    text-shadow: -1px 5px #ff2f1c3c;
+    text-transform: uppercase;
+}
+
+.roadhr {
+    border-top: 5px solid rgb(247, 176, 0);
+    margin: 15px auto;
+}
+
+#road {
+    height: 0;
+    margin: 0;
+}
+
+#roadmap .col-der img {
+    width: 60%;
+}
+
+.road-row {
+    height: 332px;
+    padding-top: 109px;
+}
+
+.col-iz {
+    padding-right: 18%;
+}
+
+.col-der2 {
+    padding-left: 15%;
+}
+
+.col-der {
+    padding-left: 15%;
+}
+
+.col-der2 i {
+    margin-bottom: 10px;
+}
+
+.road-row ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    list-style: none;
+    margin-top: 20px;
+    color: #fff;
+}
+
+ul i {
+    color: #93C100;
+}
+
+ul .fa-circle {
+    font-size: 11px;
+    margin: 0px 3px;
+}
+
+#precio {
+    position: relative;
+    padding: 7% 0px;
+    z-index: 2000;
+}
+
+footer {
+    background: url('../img/fd-footer-100.jpg');
+    background-position: center bottom;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.redes-f {
+    background: url('../img/redes-f.png');
+    background-position: center top;
+    width: 95%;
+    margin: 0 auto;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.redesf {
+    width: 90%;
+    padding: 10% 0 5% 0;
+}
+
+.redesf a {
+    font-size: 1.4rem;
+    color: #313131;
+    text-align: center;
+    margin: 0 1%;
+    -ms-flex-item-align: end;
+    -ms-grid-row-align: end;
+    align-self: end;
+    margin-bottom: 10%;
+}
+
+footer ul,
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #409100;
+}
+
+.correof {
+    text-align: center;
+    font-size: 1rem;
+    padding: 2%;
+}
+
+.correof a {
+    color: #001c21 !important;
+    font-weight: 800;
+}
+
+
+/* Responsive movil*/
+
+@media only screen and (max-width: 600px) {
+    .redes {
+        display: none;
+    }
+    .logo {
+        width: 50%;
+    }
+    .chiv-pastor,
+    .chiv-pastol {
+        width: 25%;
+        margin-top: -110px !important;
+    }
+    #corrales a img {
+        display: block;
+        width: 50%;
+        margin: 0 auto;
+    }
+    #corrales {
+        text-align: center;
+    }
+    .corral {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .prin-chiv-1,
+    .prin-chiv-2 {
+        width: 50%;
+    }
+    .corralfondo {
+        bottom: -5% !important;
+    }
+    .principal-chiv {
+        height: calc(88vh - 204px);
+        min-height: calc(100vh - 204px);
+    }
+    .logo {
+        bottom: 10% !important;
+    }
+    .chiv3hr {
+        float: unset;
+        margin: 20px auto;
+    }
+    .btn-primary {
+        margin-bottom: 15px !important;
+    }
+    .py-7 {
+        padding-top: 2rem!important;
+        padding-bottom: 2rem!important;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    @media (orientation: landscape) {
+        .navbar-brand img {
+            width: 40%;
+        }
+        .corral img {
+            width: 20% !important;
+            margin: 0 11%;
+        }
+        .logo {
+            width: 30%;
+        }
+        .corralfondo {
+            bottom: -17% !important;
+        }
+        .btn-chiv {
+            display: none;
+        }
+        .redes {
+            display: none;
+        }
+        .prin-chiv-1,
+        .prin-chiv-2 {
+            display: contents;
+        }
+    }
+    .ma-video {
+        background: none;
+        height: auto;
+    }
+    .video-chiv iframe {
+        width: 100%;
+        height: 250px;
+    }
+    #second h2,
+    #equipo h2,
+    #precio h2 {
+        font-size: 28px;
+        text-shadow: -1px 5px #ff2f1c3c;
+    }
+    #pte h2,
+    #personajes h2,
+    #corrales h2 {
+        font-size: 28px;
+        text-shadow: -1px 5px #ff2f1c3c;
+    }
+    .corral {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    .corralfondo {
+        bottom: -10%;
+    }
+    .corral img {
+        width: 70%;
+    }
+    header {
+        text-align: center !important;
+    }
+    #pte {
+        height: unset;
+    }
+    #pte img {
+        width: 50%;
+    }
+    #pte .chiv-roja {
+        margin-top: -120px!important;
+    }
+    #pte .chiv-der {
+        margin-top: -80px!important;
+    }
+    .r-personajes {
+        text-align: center;
+    }
+    .chivhr {
+        float: unset;
+        margin: 20px auto;
+    }
+    .corral-m {
+        height: 100%;
+    }
+    #principal {
+        position: relative;
+    }
+    .logo {
+        position: absolute;
+        bottom: 20%;
+        z-index: 5000;
+    }
+    .logo img {
+        width: 60%
+    }
+    .container-slider {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    #modos-juego {
+        height: unset;
+    }
+    .sliderc {
+        height: 200px;
+    }
+    .sliderc-img {
+        width: 230px;
+    }
+    .slider-img {
+        width: 265px;
+    }
+    #corrales a img {
+        width: 50%;
+    }
+    .chiv-pastor,
+    .chiv-pastol {
+        width: 25%;
+        margin-top: -90px !important;
+    }
+    .person {
+        margin-bottom: 30px;
+    }
+    #partners,
+    #equipo,
+    #corrales,
+    #pte {
+        overflow-x: hidden;
+    }
+    #partners,
+    .partn-h {
+        height: 200px;
+    }
+    .partn-h img {
+        width: 30%;
+    }
+    #roadmap,
+    .no-movil {
+        display: none;
+    }
+    #road-movil h2 {
+        font-family: "Open Sans";
+        font-weight: 800;
+        font-size: 28px;
+        color: rgb(247, 176, 0);
+        text-shadow: -1px 5px #ff2f1c3c;
+        text-transform: uppercase;
+    }
+    #road-movil {
+        background: #409100;
+    }
+    .partn-iz {
+        width: 40%;
+        margin-top: -190px !important;
+    }
+    .partn-der {
+        width: 40%;
+        margin-top: -180px !important;
+    }
+    #modos-juego h2 {
+        font-size: 28px;
+    }
+    .redes-f {
+        margin: 0px auto 20px auto;
+    }
+    .correof {
+        font-size: 0.7rem;
+    }
+    .redesf a {
+        font-size: 1rem;
+    }
+    #road-movil li {
+        color: #fff;
+        text-align: left;
+        list-style: none;
+    }
+    a.nav-link {
+        padding-right: 0.3rem !important;
+        padding-left: 0.3rem !important;
+    }
+    footer h3 {
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .corral-img-movil {
+        display: none !important;
+    }
+    #road-movil {
+        display: none;
+    }
+}
+
+
+/* animacion nubes*/
+
+.nube {
+    background: url('../img/nube1.png');
+    width: 400px;
+    height: 195px;
+    background-size: 100% 100%;
+    position: absolute;
+    animation: nubean1 80s infinite;
+}
+
+.nube2 {
+    background: url('../img/nube2.png');
+    width: 478px;
+    height: 209px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 20%;
+    animation: nubean2 70s infinite;
+}
+
+.nube3 {
+    background: url('../img/nube3.png');
+    width: 478px;
+    height: 209px;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 5%;
+    animation: nubean2 110s infinite;
+}
+
+.aves {
+    position: absolute;
+    top: 5%;
+    animation: aves 35s infinite;
+    opacity: 0.5;
+}
+
+@keyframes nubean1 {
+    from {
+        margin-left: 80%;
+    }
+    to {
+        margin-left: -20%;
+    }
+}
+
+@keyframes nubean2 {
+    from {
+        margin-left: -20%;
+    }
+    to {
+        margin-left: 110%;
+    }
+}
+
+@keyframes aves {
+    from {
+        margin-left: 101%;
+    }
+    to {
+        margin-left: -20%;
+    }
+}
