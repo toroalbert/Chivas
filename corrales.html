@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <base href="https://chivasfarming.com/">
+    <base href="http://chivasfarming/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
@@ -63,6 +63,15 @@
         
         .navbar {
             min-height: 81px;
+        }
+        
+        * {
+            scrollbar-width: none;
+        }
+        
+        *::-webkit-scrollbar {
+            width: 0px;
+            display: none;
         }
     </style>
     <!-- Google Tag Manager -->
@@ -160,6 +169,15 @@
                     <h1>Visualiza el Spot de Tu Corral</h1>
                     <div class="canvascontent">
                         <canvas width="1216" height="980" id="canvas" class="mb-5"></canvas>
+                        <div id="spot" class="hidden">
+                            <span>6</span>
+                        </div>
+                        <div id="elements" class="hidden elements-4">
+                            <!-- <img class="ico ico-0 element-1" src="./assets/img/p/e/AIR/ico.png" alt="ico-0">
+                        <img class="ico ico-0 element-2" src="./assets/img/p/e/FIRE/ico.png" alt="ico-0">
+                        <img class="ico ico-0 element-3" src="./assets/img/p/e/EARTH/ico.png" alt="ico-0">
+                        <img class="ico ico-0 element-4" src="./assets/img/p/e/WATER/ico.png" alt="ico-0"> -->
+                        </div>
                     </div>
                 </div>
                 <div class="col-12 col-sm-5 mt-sm-5">
@@ -172,7 +190,7 @@
                     <form action="" id="Gen_CHIV">
 
                         <div class="mb-3">
-                            <label for="rareza" class="form-label">Rareza y Clase de la CHIVA</label>
+                            <label for="rareza" class="form-label">Rareza del Corral</label>
                             <div class="input-group mb-3">
                                 <select class="form-select btn-outline-success" id="rareza">
                                 <option value="0" selected>Standard</option>
@@ -180,6 +198,19 @@
                                 <option value="2">Épico</option>
                                 <option value="3">Legendario</option>
                                 <option value="4">Mistico</option>
+                            </select>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="rareza" class="form-label">Elemento del Corral</label>
+                            <div class="input-group mb-3">
+                                <select class="form-select btn-outline-success" id="element" multiple>
+                                <!-- <option value="NONE" selected>None</option> -->
+                                <option value="AIR">AIR</option>
+                                <option value="EARTH">EARTH</option>
+                                <option value="FIRE">FIRE</option>
+                                <option value="WATER">WATER</option>
                             </select>
                             </div>
                         </div>
@@ -213,9 +244,14 @@
     </div>
     <div class="ocult hidden"></div>
     <style>
+        .hidden {
+            display: none;
+        }
+        
         #canvas {
-            max-height: 80%;
-            max-width: 100%;
+            max-height: 50%;
+            max-width: 50%;
+            margin-top: 100px;
         }
         
         .canvascontent {
@@ -233,9 +269,155 @@
             MARGIN-BOTTOM: 50px;
         }
         
+        #spot {
+            position: absolute;
+            bottom: 15%;
+            text-align: center;
+            background-image: url(./assets/img/c/spot.png);
+            width: 110px;
+            height: 110px;
+            background-size: cover;
+            background-position: center;
+            color: black;
+            left: calc(50% - 55px);
+            font-size: 40px;
+            font-weight: bold;
+        }
+        
+        #spot span {
+            margin-top: calc(50% - 30px);
+            display: block;
+        }
+        
+        #elements {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            height: 50%;
+        }
+        
+        #elements img {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+        }
+        
+        .elements-1 .element-1 {
+            bottom: 0;
+            left: calc(50% - 40px);
+        }
+        
+        .elements-2 img {
+            bottom: 30px;
+        }
+        
+        .elements-2 .element-1 {
+            left: calc(50% - 110px);
+        }
+        
+        .elements-2 .element-2 {
+            left: calc(50% + 30px);
+        }
+        
+        .elements-3 img {
+            bottom: 50px;
+        }
+        
+        .elements-3 .element-2 {
+            bottom: 0;
+            left: calc(50% - 40px);
+        }
+        
+        .elements-3 .element-1 {
+            left: calc(50% - 130px);
+        }
+        
+        .elements-3 .element-3 {
+            left: calc(50% + 50px);
+        }
+        
+        .elements-4 img {
+            bottom: 20px;
+        }
+        
+        .elements-4 .element-1 {
+            bottom: 80px;
+            left: calc(50% - 185px);
+        }
+        
+        .elements-4 .element-2 {
+            left: calc(50% - 100px);
+        }
+        
+        .elements-4 .element-3 {
+            left: calc(50% + 15px);
+        }
+        
+        .elements-4 .element-4 {
+            left: calc(50% + 100px);
+            bottom: 80px;
+        }
+        
         @media (max-width: 576px) {
+            #canvas {
+                margin-top: 50px;
+            }
             .canvascontent {
-                height: auto;
+                height: 380px;
+            }
+            #spot {
+                width: 60px;
+                height: 60px;
+                left: calc(50% - 30px);
+                font-size: 25px;
+            }
+            #spot span {
+                margin-top: calc(50% - 20px);
+            }
+            #elements img {
+                width: 50px;
+                height: 50px;
+            }
+            .elements-1 .element-1 {
+                left: calc(50% - 25px);
+            }
+            .elements-2 img {
+                bottom: 15px;
+            }
+            .elements-2 .element-1 {
+                left: calc(50% - 70px);
+            }
+            .elements-2 .element-2 {
+                left: calc(50% + 15px);
+            }
+            .elements-3 img {
+                bottom: 30px;
+            }
+            .elements-3 .element-1 {
+                left: calc(50% - 80px)
+            }
+            .elements-3 .element-2 {
+                left: calc(50% - 25px)
+            }
+            .elements-3 .element-3 {
+                left: calc(50% + 30px);
+            }
+            .elements-4 img {
+                bottom: 10px;
+            }
+            .elements-4 .element-1 {
+                bottom: 45px;
+                left: calc(50% - 110px);
+            }
+            .elements-4 .element-2 {
+                left: calc(50% - 60px);
+            }
+            .elements-4 .element-3 {
+                left: calc(50% + 10px);
+            }
+            .elements-4 .element-4 {
+                left: calc(50% + 60px);
+                bottom: 45px;
             }
         }
         /* .canvascontent:before {
@@ -271,9 +453,11 @@
                 data = {}
 
                 data.rareza = $("#rareza").val();
+                data.element = $("#element").val();
                 data.food = $("#food").val();
                 data.water = $("#water").val();
-
+                // console.log("element");
+                // console.log(data.element);
                 gen_chiv_canvas(data);
             });
 
@@ -286,6 +470,16 @@
             options[Math.floor(Math.random() * options.length)].selected = true
             data.rareza = $("#rareza").val();
 
+            options = $("#element > option")
+            for (i in options) {
+                if (Math.random() < 0.5) {
+                    options[i].selected = true;
+                } else {
+                    options[i].selected = false;
+                }
+            }
+            data.element = $("#element").val();
+
             options = $("#food > option")
             options[Math.floor(Math.random() * options.length)].selected = true
             data.food = $("#food").val();
@@ -296,12 +490,20 @@
 
             gen_chiv_canvas(data);
         }
+        var spot = [];
+        spot[0] = 6;
+        spot[1] = 10;
+        spot[2] = 15;
+        spot[3] = 20;
+        spot[4] = 25;
 
         function gen_chiv_canvas(data) {
             // console.log(data);
             base = "./assets/img/c/";
             type = ".png";
-            // $(".canvascontent").css("background-image", "url(" + base + "r/" + data.rareza + "/" + data.clase + ".png)");
+            $(".canvascontent").css("background-image", "url(" + base + data.rareza + "/shield.png)");
+            $("#spot span").html(spot[data.rareza]);
+
 
             var canvas = document.getElementById("canvas");
             var ctx = canvas.getContext("2d");
@@ -310,47 +512,57 @@
             var img = new Image();
             img.src = base + "base" + type;
             img.onload = function() {
-                // ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-                ctx.drawImage(img, 0, 50, 1216, 930);
-                img.src = base + "/water_" + data.water + type;
-                img.onload = function() {
-                    ctx.drawImage(img, 906, 100, 270, 529);
-                    img.src = base + "" + data.rareza + "/fence" + type;
+                    // ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+                    ctx.drawImage(img, 0, 50, 1216, 930);
+                    img.src = base + "/water_" + data.water + type;
                     img.onload = function() {
-                        ctx.drawImage(img, 0, 50, 884, 827);
+                        ctx.drawImage(img, 906, 100, 270, 529);
+                        img.src = base + "" + data.rareza + "/fence" + type;
+                        img.onload = function() {
+                            ctx.drawImage(img, 0, 50, 884, 827);
 
-                        if (data.food > 0) {
-                            if (data.food == 1) {
-                                img.src = base + "/food_1" + type;
-                                img.onload = function() {
-                                    ctx.drawImage(img, 261, 516, 696, 362);
-                                    img.src = base + "" + data.rareza + "/door" + type;
+                            if (data.food > 0) {
+                                if (data.food == 1) {
+                                    img.src = base + "/food_1" + type;
                                     img.onload = function() {
-                                        ctx.drawImage(img, 236, 702, 747, 211);
-                                    }
-                                }
-                            } else {
-                                img.src = base + "/food_1" + type;
-                                img.onload = function() {
-                                    ctx.drawImage(img, 261, 516, 696, 362);
-                                    img.src = base + "/food_2" + type;
-                                    img.onload = function() {
-                                        ctx.drawImage(img, 261, 0, 671, 414);
+                                        ctx.drawImage(img, 261, 516, 696, 362);
                                         img.src = base + "" + data.rareza + "/door" + type;
                                         img.onload = function() {
                                             ctx.drawImage(img, 236, 702, 747, 211);
                                         }
                                     }
+                                } else {
+                                    img.src = base + "/food_1" + type;
+                                    img.onload = function() {
+                                        ctx.drawImage(img, 261, 516, 696, 362);
+                                        img.src = base + "/food_2" + type;
+                                        img.onload = function() {
+                                            ctx.drawImage(img, 261, 0, 671, 414);
+                                            img.src = base + "" + data.rareza + "/door" + type;
+                                            img.onload = function() {
+                                                ctx.drawImage(img, 236, 702, 747, 211);
+                                            }
+                                        }
+                                    }
                                 }
-                            }
-                        } else {
-                            img.src = base + "" + data.rareza + "/door" + type;
-                            img.onload = function() {
-                                ctx.drawImage(img, 236, 702, 747, 211);
+                            } else {
+                                img.src = base + "" + data.rareza + "/door" + type;
+                                img.onload = function() {
+                                    ctx.drawImage(img, 236, 702, 747, 211);
+                                }
                             }
                         }
                     }
                 }
+                // console.log(data.element);
+            $(".canvascontent *").removeClass("hidden");
+            $("#elements").html("");
+            $("#elements").attr("class", " ")
+            $("#elements").addClass("elements-" + data.element.length)
+            for (i in data.element) {
+                // console.log();
+                html = '<img class="ico ico-0 element-' + (parseInt(i) + 1) + '" src="./assets/img/p/e/' + data.element[i] + '/ico.png" alt="ico-0 element-' + (parseInt(i) + 1) + '">';
+                $("#elements").append(html);
             }
         }
 
